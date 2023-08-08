@@ -1,0 +1,22 @@
+<h1>List User</h1>
+<!-- <a href="{% url 'home' %}">
+    <button type="button">new_user</button>
+</a>  -->
+<table border="1">
+    <tr>
+     <th>Name</th>
+     <th>age</th>
+     <th>contact</th>
+     <th>discription</th>
+    </tr>
+ {% for User in users %}
+   <tr>
+     <td>{{User.name}}</td>
+     <td>{{User.age}}</td>
+     <!-- <td>{{User.contact}}</td> -->
+     <!-- <td>{{User.description}}</td> -->
+    
+
+    </tr>
+ {% endfor %}
+</table>
